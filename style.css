@@ -1,0 +1,306 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+.hero{
+    min-height: 100vh; /* ensures image fills screen before footer */
+    background: 
+      linear-gradient(rgba(128, 128, 128, 0.5), rgba(10, 20, 60, 0.9)), 
+      url('files/pho_tai_bo_vien.jpeg') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  footer {
+    background-color: #0a143c; /* dark navy */
+    color: #f8f9fa;           /* soft white */
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    border-top: 3px solid #e63946; /* accent line (matches your Order Now button) */
+  }
+  
+  footer p {
+    margin: 0.25rem 0;
+  }
+  
+  footer .footer-brand {
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  footer .footer-hours {
+    color: #adb5bd; /* lighter gray-blue for secondary info */
+    font-size: 0.9rem;
+  }
+
+  footer p:last-child {
+    margin-top: 15px; /* adjust spacing as needed */
+    font-size: 0.9em; /* slightly smaller text */
+    color: #aaa; /* optional: lighter color for copyright */
+  }
+  
+  
+  /* Header Styling */
+  .header {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Left: Logo + Name */
+  .logo-section {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  .restaurant-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Right: Buttons */
+  .nav-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .btn {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background 0.3s ease;
+    text-align: center;
+  }
+  
+  /* Menu Button */
+  .menu-btn {
+    color: #333;
+  }
+  
+  .menu-btn:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Order Now Button */
+  .order-btn {
+    background-color: #e63946;
+    color: white;
+  }
+  
+  .order-btn:hover {
+    background-color: #d62828;
+  }
+
+  /* Hero Section */
+.hero {
+    min-height: 80vh; /* big section with background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #ddd;
+  }
+  
+  /* Buttons in main */
+  .hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Shared Button Style */
+  .hero .btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Red Order Now */
+  .hero .order-btn {
+    background-color: #e63946;
+    color: white;
+  }
+  .hero .order-btn:hover {
+    background-color: #d62828;
+  }
+  
+  /* White See Menu */
+  .hero .menu-btn {
+    background-color: white;
+    color: #333;
+    border: 2px solid #fff;
+  }
+  .hero .menu-btn:hover {
+    background-color: #f0f0f0;
+  }
+  
+
+
+  .menu-page {
+    min-height: 100vh;
+    padding: 4rem 2rem;
+    background-color: #f1efec; /* soft cream */
+    color: #0a143c;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .menu-page h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .menu-category {
+    margin-bottom: 3rem;
+  }
+  
+  .menu-category h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #e63946; /* accent line */
+    display: inline-block;
+    padding-bottom: 0.3rem;
+  }
+  
+  .menu-items {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff; /* white card */
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .menu-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  
+  .item-name {
+    font-weight: 500;
+    flex:1;
+    text-align: left;
+  }
+  
+  .item-price {
+    font-weight: bold;
+    color: #e63946; /* brand red */
+  }
+
+  .note {
+    font-size: 0.9rem;        /* slightly smaller than header */
+    color: #555;              /* subtle gray */
+    margin-bottom: 1rem;      /* space before items */
+    font-style: italic;       /* optional: italic to distinguish note */
+  }
+
+/* Container for language toggle */
+.language-switch {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;  /* center on menu page */
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* Toggle buttons */
+  .lang-toggle, .language-switch button {
+    background-color: #ffffff;       /* white card style */
+    border: 1px solid #e63946;       /* brand red border */
+    color: #e63946;                  /* brand red text */
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  /* Hover effect */
+  .lang-toggle:hover, .language-switch button:hover {
+    background-color: #e63946;
+    color: #ffffff;
+    transform: translateY(-2px);
+  }
+  
+  /* Active/selected language */
+  .lang-toggle.active, .language-switch button.active {
+    background-color: #e63946;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  }
+  
+  
+  /* Two-column layout for tablet/laptop */
+  @media (min-width: 768px) {
+    .menu-items {
+        grid-template-columns: 1fr 1fr; /* 2 columns on tablet/laptop */
+        gap: 1rem;
+    }
+  
+    .menu-item {
+      flex: 1 1 calc(50% - 1rem); /* each item takes half width minus gap */
+    }
+  }
+  
